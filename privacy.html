@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VidNab Privacy Policy</title>
+<style>
+  :root { --bg: #fff; --fg: #1f2328; --muted: #59636e; --line: #d1d9e0; --link: #0969da; }
+  @media (prefers-color-scheme: dark) { :root { --bg: #0d1117; --fg: #e6edf3; --muted: #9198a1; --line: #3d444d; --link: #4493f8; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.65 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 28px; margin: 0 0 4px; }
+  h2 { font-size: 19px; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .muted { color: var(--muted); font-size: 14px; }
+  a { color: var(--link); }
+  li { margin: 4px 0; }
+</style>
+</head>
+<body>
+<main>
+<h1>VidNab Privacy Policy</h1>
+<p class="muted">Last updated: October 16, 2026</p>
+
+<p><strong>Short version: VidNab does not collect, store on any server, sell, or share any personal data.</strong>
+There is no account, no analytics, no tracking and no ads. Everything the extension does happens inside your own browser.</p>
+
+<h2>What the extension processes</h2>
+<ul>
+  <li><strong>Network requests of the page you are viewing.</strong> To detect videos, VidNab looks at the addresses of media
+    files (for example .mp4, .m3u8) that the current tab loads. This happens locally; the addresses are never sent anywhere.</li>
+  <li><strong>The video you choose to download.</strong> When you click Download, the extension fetches that video's files directly
+    from the website that hosts it — the same way your browser plays it — and saves the result to your computer with Chrome's download manager.
+    To do this it may send the page's own Referer/Origin header and your existing cookies for that site, only to that site.</li>
+</ul>
+
+<h2>What is stored, and where</h2>
+<ul>
+  <li><strong>Detected videos and download progress</strong> are kept in the browser's session storage and are cleared when the browser closes.</li>
+  <li><strong>A download counter and a "support message seen" flag</strong> are kept in local extension storage, only so the
+    one-time "support the project" message is shown once. They never leave your device.</li>
+  <li>Downloaded files are saved where you choose, like any other download.</li>
+</ul>
+<p>Uninstalling the extension deletes all of the above.</p>
+
+<h2>What is never collected</h2>
+<p>No browsing history, no list of videos you watch or download, no personal information, no device identifiers.
+VidNab has no server of its own and makes no requests other than downloading the video you asked for.</p>
+
+<h2>Third parties</h2>
+<p>The optional "Support" link opens our page on Ko-fi (ko-fi.com) in a new tab. If you choose to donate, Ko-fi and PayPal
+handle that payment under their own privacy policies; we only receive the donation, not your payment details.</p>
+
+<h2>Permissions</h2>
+<ul>
+  <li><code>webRequest</code> and access to all sites — to notice media files on whatever site you are watching.</li>
+  <li><code>declarativeNetRequestWithHostAccess</code> — to add the original page's Referer/Origin to the extension's own download requests, so sites that require it still work.</li>
+  <li><code>downloads</code> — to save the finished file.</li>
+  <li><code>offscreen</code> — to join video segments into one file in the background.</li>
+  <li><code>storage</code> — for the local data listed above.</li>
+</ul>
+
+<h2>Limits</h2>
+<p>VidNab does not download from YouTube and does not bypass DRM or other copy protection. You are responsible for
+only downloading content you have the right to save.</p>
+
+<h2>Changes and contact</h2>
+<p>If this policy changes, the new version will be posted on this page with a new date.
+Questions: <a href="mailto:runshde@gmail.com">runshde@gmail.com</a></p>
+
+<h2 lang="zh-CN">中文摘要</h2>
+<p lang="zh-CN">VidNab 不收集、不上传、不出售任何个人数据，没有账号、统计、跟踪和广告。插件只在你的浏览器里识别当前网页加载的视频地址；
+你点下载时，直接从视频所在网站取文件并保存到本机。识别结果和下载进度只存在浏览器会话里，关闭浏览器即清除；
+本地只存一个下载次数和“赞助提示已看过”的标记。赞助链接会打开 Ko-fi，付款由 Ko-fi 和 PayPal 处理。联系：runshde@gmail.com</p>
+</main>
+</body>
+</html>
